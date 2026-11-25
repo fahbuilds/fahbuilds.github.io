@@ -21,7 +21,7 @@
 </header>
 
 <section class="legal">
-<h1>Privacy policy</h1><p class="note">Last updated: 24 November 2026</p>
+<h1>Privacy policy</h1><p class="note">Last updated: 25 November 2026</p>
 <p>Fah Builds is run by Santhebennur Khazi Touseef (Touseef Ahamed SK), an individual based in Bengaluru, Karnataka, India ("we", "us"). This policy covers this website and our apps: ReviewReply, ListingWriter and TutorDesk.</p>
 <h2>What we collect</h2>
 <ul>
@@ -30,6 +30,14 @@
 <li><b>TutorDesk:</b> student names, phone numbers and fee records are stored only on your phone. We don't upload them.</li>
 <li><b>Payments and pre-orders:</b> handled by Razorpay (and later possibly Gumroad), which share your name, email and phone with us so we can deliver your order. We never see or store your card or bank details.</li>
 <li><b>Basic usage:</b> counts such as how many replies you used this month, so we can apply plan limits.</li>
+</ul>
+<h2 id="reviewreply">ReviewReply (Chrome extension) in detail</h2>
+<ul>
+<li><b>What leaves your browser:</b> only when you click "Write reply" or "Try again": the review text you selected or pasted, the star rating, the language and tone you picked, and the business name and signature if you filled them in.</li>
+<li><b>Where it goes:</b> to our server on Cloudflare Workers, which sends it to Google's Gemini API to write the reply and returns the reply to you. We don't store the review or the reply. While we use Gemini's free tier, Google may use the text it receives to improve its products; we'll move to a paid tier, where Google doesn't do this, before offering paid plans.</li>
+<li><b>Install ID:</b> the extension creates a random ID (not linked to your name, email or Google account) so we can count your free replies. Our server keeps a count per install ID per month (deleted after about 40 days) and a count per internet address per day to stop abuse (deleted after 2 days).</li>
+<li><b>Stored on your computer only:</b> your business name, signature, language and tone choices, in Chrome's extension storage.</li>
+<li><b>Page access:</b> the extension reads only the text you select and right-click. It writes to a page only when you click "Insert into page", and then only into the reply box you last clicked. It doesn't read your browsing history, other tabs or your Google account.</li>
 </ul>
 <h2>What we don't do</h2>
 <ul><li>We don't sell your data.</li><li>We don't ask for your Google, marketplace or other passwords.</li><li>We don't post anything on your behalf without you clicking post.</li></ul>
